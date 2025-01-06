@@ -1,0 +1,47 @@
+body {
+    background-color: #f4f4f4;
+    color: #2e1f2c;
+    font-family: 'Oswald', serif;
+}
+
+h1 {
+    background-color: rgb(218, 132, 132);
+    margin: 50px;
+    padding: 20px;
+    text-align: center;
+    text-transform: uppercase;
+
+}
+
+img {
+    width: 300px;
+    border-radius: 50%;
+    display: block;
+    text-align: center;
+
+    /* I cannot figure out how to make my image center aligned on the page. */
+
+}
+
+h2 {
+    text-decoration: underline;
+    margin: 50px;
+}
+
+p, ul {
+    margin: 50px;
+}
+
+li {
+    list-style-type: none;
+    border-color: rgb(218, 132, 132);
+    border-width: 3px;
+    border-style: solid;
+    margin: 30px;
+    padding: 10px;
+    text-align: center;
+}
+ 
+a {
+    color:  rgb(218, 132, 132);
+}
