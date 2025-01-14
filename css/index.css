@@ -2,25 +2,31 @@ body {
     background-color: #f4f4f4;
     color: #2e1f2c;
     font-family: 'Oswald', serif;
+    padding: 0;
+    margin: 0;
 }
 
-h1 {
+.main-nav {
     background-color: rgb(218, 132, 132);
-    margin: 50px;
-    padding: 20px;
-    text-align: center;
     text-transform: uppercase;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
+.name {
+    padding: 5px;
 }
 
 img {
     width: 300px;
     border-radius: 50%;
+    padding-top: 20px;
     display: block;
-    text-align: center;
-
-    /* I cannot figure out how to make my image center aligned on the page. */
-
+    margin: 0 auto;
 }
 
 h2 {
@@ -32,7 +38,7 @@ p, ul {
     margin: 50px;
 }
 
-li {
+#Experience li {
     list-style-type: none;
     border-color: rgb(218, 132, 132);
     border-width: 3px;
@@ -45,3 +51,55 @@ li {
 a {
     color:  rgb(218, 132, 132);
 }
+
+.nav-list {
+   margin: 0;
+   padding: 0;
+}
+
+.nav-list ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-list ul li {
+    margin: 0 15px;
+}
+
+.nav-list ul li a {
+    color: #2E1F2C;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-list ul li a:hover {
+    text-decoration: underline;
+}
+
+#Experience ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+#Connect {
+    margin: 0;
+}
+
+#Connect ul {
+    display: flex;
+}
+
+#Connect ul li {
+    display: flex;
+    list-style-type: none;
+    margin-right: 5%;
+    
+}
+
+
+
+/* question 1: the sticky header interferes with the internal links on the webpage. How can I adjust it so that the section header for the internal link isn't covered by the sticky header?
+
+Question 2: for my Experience section, how can I use flex to make the box/border sizes uniform? Right now, it looks like they are dependent on each li element's character length, and it looks ugly.*/
